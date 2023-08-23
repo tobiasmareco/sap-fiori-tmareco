@@ -5,7 +5,7 @@
 >
 	<Button
 		text='{i18n>sayHelloButton}'
-		press=".onPressSayHello"
+		press=".onButtonPressSayHello"
 		id="idSayHelloButton"
 	/>
 	<Input
