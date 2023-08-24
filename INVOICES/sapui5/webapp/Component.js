@@ -9,15 +9,10 @@ sap.ui.define(
      * @param {typeof sap.ui.model.resource.ResourceModel} ResourceModel
      */
     function (UIComponent, Models, ResourceModel) {
-        const sClassName = 'invoices.sapiu5.Component';
+        const sClassName = 'invoices.sapui5.Component';
         return UIComponent.extend(sClassName, {
             metadata: {
-                "rootView": {
-                    "viewName":"invoices.sapui5.view.App",
-                    "type":"XML",
-                    "async":"true",
-                    "id":"App"
-                }
+                manifest: "json"
             },
             init: function () {
                 // llamar a la funcion padre.
@@ -30,3 +25,12 @@ sap.ui.define(
             }
         })
     });
+
+/**
+ *   "rootView": {
+    "viewName":"invoices.sapui5.view.App",
+    "type":"XML",
+    "async":"true",
+    "id":"App"
+}
+ */
